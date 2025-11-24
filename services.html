@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Lucid Directions</title>
+    <link rel="stylesheet" href="css/tailwind_output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cta-button {
+            @apply inline-block bg-teal-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-teal-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 active:scale-[.98];
+        }
+
+        .cta-link {
+            @apply text-teal-600 font-semibold hover:text-teal-800 transition duration-300 ease-in-out focus:outline-none focus:ring-1 focus:ring-teal-500 rounded active:scale-[.98];
+        }
+
+        /* Page header background */
+        .page-header {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('images/abstract_tech_background1.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Custom list style for service details */
+        .service-list li {
+            @apply relative pl-8 mb-3;
+        }
+
+        .service-list li::before {
+            content: '\2713';
+            /* Checkmark */
+            @apply absolute left-0 top-1 text-teal-500 font-bold text-xl;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
+            <a href="index.html" aria-label="Lucid Directions Home"><img src="images/logo2.png"
+                    alt="Lucid Directions Logo" class="h-24 md:h-32"></a> <!-- Logo -->
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none" aria-label="Open main menu"
+                    aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html"
+                        class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 ease-in-out">Home</a>
+                </li>
+                <li><a href="about.html"
+                        class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 ease-in-out">About
+                        Us</a></li>
+                <li><a href="services.html"
+                        class="text-teal-600 font-semibold border-b-2 border-teal-600 pb-1 transition duration-300 ease-in-out"
+                        aria-current="page">Services</a></li> <!-- Current page indication -->
+
+                <li><a href="contact.html"
+                        class="text-gray-700 hover:text-teal-600 font-medium transition duration-300 ease-in-out">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="index.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-teal-600">Home</a>
+                </li>
+                <li><a href="about.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-teal-600">About
+                        Us</a></li>
+                <li><a href="services.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-white bg-teal-700"
+                        aria-current="page">Services</a></li>
+                <li><a href="contact.html"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-teal-600">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header text-white py-16 sm:py-20 md:py-24 px-4 sm:px-6 text-center relative"
+            aria-labelledby="page-title">
+            <div class="container mx-auto max-w-4xl relative z-10">
+                <h1 id="page-title" class="text-2xl sm:text-4xl md:text-5xl font-bold mb-6">Our Expertise: Intelligent
+                    Solutions, Tailored for You</h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-200">At Lucid Directions, we offer a comprehensive
+                    suite of AI and software development services designed to address the unique challenges and
+                    opportunities of businesses across various sectors. We build solutions that are not just functional
+                    but truly transformative.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="ai-solutions-heading" class="service-category py-12 px-4 sm:px-6 md:py-16 bg-white">
+            <div class="container mx-auto max-w-4xl">
+                <h2 id="ai-solutions-heading" class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                    AI-Powered Solutions</h2>
+                <p class="text-gray-700 mb-10 text-lg">Unlock the potential of Artificial Intelligence to gain a
+                    competitive edge. We specialize in developing and integrating AI capabilities that automate tasks,
+                    uncover insights, and create smarter products and services.</p>
+                <ul class="service-list text-gray-700 text-lg space-y-3">
+                    <li><strong>Machine Learning (ML):</strong> Building predictive models, recommendation engines, and
+                        data analysis tools that learn from your data.</li>
+                    <li><strong>Natural Language Processing (NLP):</strong> Enabling software to understand, interpret,
+                        and generate human language for applications like chatbots, sentiment analysis, and automated
+                        reporting.</li>
+                    <li><strong>Computer Vision:</strong> Developing systems that can "see" and interpret visual
+                        information from images and videos, powering applications like NutriSnap's meal analysis.</li>
+                    <li><strong>AI Strategy & Consultation:</strong> Helping you identify opportunities to leverage AI
+                        within your business and creating a roadmap for implementation.</li>
+                    <li><strong>Process Automation:</strong> Using AI to automate repetitive tasks, freeing up your team
+                        to focus on higher-value activities.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="custom-dev-heading" class="service-category py-12 px-4 sm:px-6 md:py-16 bg-gray-100">
+            <div class="container mx-auto max-w-4xl">
+                <h2 id="custom-dev-heading" class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">Custom
+                    Software Development</h2>
+                <p class="text-gray-700 mb-10 text-lg">Off-the-shelf software doesn't always fit. We build bespoke
+                    software solutions designed specifically for your business processes and goals, ensuring seamless
+                    integration and optimal performance.</p>
+                <ul class="service-list text-gray-700 text-lg space-y-3">
+                    <li><strong>Requirement Analysis & Design:</strong> Collaborating closely with you to define
+                        requirements and design intuitive, user-centric software.</li>
+                    <li><strong>Full-Stack Development:</strong> Expertise across the entire technology stack, from
+                        backend databases and APIs to frontend user interfaces.</li>
+                    <li><strong>Scalable Architecture:</strong> Building solutions designed to grow with your business,
+                        handling increased load and evolving requirements.</li>
+                    <li><strong>API Development & Integration:</strong> Connecting disparate systems and enabling data
+                        flow across your technology ecosystem.</li>
+                    <li><strong>Maintenance & Support:</strong> Providing ongoing support to ensure your custom software
+                        remains robust and up-to-date.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="web-mobile-heading" class="service-category py-12 px-4 sm:px-6 md:py-16 bg-white">
+            <div class="container mx-auto max-w-4xl">
+                <h2 id="web-mobile-heading" class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">Web &
+                    Mobile App Development</h2>
+                <p class="text-gray-700 mb-10 text-lg">Engage your audience and streamline operations with beautifully
+                    designed, highly functional websites and mobile applications.</p>
+                <ul class="service-list text-gray-700 text-lg space-y-3">
+                    <li><strong>Responsive Web Design:</strong> Creating websites that look and perform flawlessly on
+                        all devices – desktops, tablets, and smartphones.</li>
+                    <li><strong>Progressive Web Apps (PWAs):</strong> Building web applications with native app-like
+                        capabilities for enhanced user experience.</li>
+                    <li><strong>Native & Cross-Platform Mobile Apps:</strong> Developing applications for iOS and
+                        Android, tailored to your target audience and budget.</li>
+                    <li><strong>E-commerce Solutions:</strong> Building secure and user-friendly online stores.</li>
+                    <li><strong>Content Management Systems (CMS):</strong> Implementing systems like WordPress or
+                        developing custom CMS solutions for easy content updates.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="saas-dev-heading" class="service-category py-12 px-4 sm:px-6 md:py-16 bg-gray-100">
+            <div class="container mx-auto max-w-4xl">
+                <h2 id="saas-dev-heading" class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                    Software-as-a-Service (SaaS) Development</h2>
+                <p class="text-gray-700 mb-10 text-lg">Launch your own subscription-based software product. We guide you
+                    through the entire process, from concept validation to deployment and scaling.</p>
+                <ul class="service-list text-gray-700 text-lg space-y-3">
+                    <li><strong>MVP Development:</strong> Building Minimum Viable Products to test your market and
+                        gather user feedback quickly.</li>
+                    <li><strong>Multi-Tenant Architecture:</strong> Designing platforms capable of securely serving
+                        multiple customers.</li>
+                    <li><strong>Subscription & Billing Integration:</strong> Implementing secure payment gateways and
+                        subscription management.</li>
+                    <li><strong>Cloud Deployment & Scaling:</strong> Leveraging cloud platforms (AWS, Azure, GCP) for
+                        reliable and scalable hosting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="contact-cta-heading"
+            class="contact-cta py-12 px-4 sm:px-6 md:py-20 bg-teal-700 text-white text-center">
+            <div class="container mx-auto max-w-3xl">
+                <h2 id="contact-cta-heading" class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Let's Build Your
+                    Solution</h2>
+                <p class="text-teal-100 mb-10 text-lg">No matter the complexity or scale of your project, Lucid
+                    Directions has the expertise to deliver. We combine technical proficiency with strategic thinking to
+                    create solutions that provide lasting value.</p>
+                <a href="contact.html" class="cta-button">Discuss Your Project Needs</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-10 px-6 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Lucid Directions Ltd. All rights reserved. | Newcastle upon Tyne, UK</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

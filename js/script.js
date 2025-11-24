@@ -12,24 +12,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Enhance any <form data-formspree> with AJAX feedback
-document.querySelectorAll('form[data-formspree]').forEach(form => {
-  const status = form.querySelector('[data-status]');
-  if (!status) return;
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    status.textContent = 'Sending…';
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      });
-      status.textContent = res.ok ? "Thanks! We'll be in touch." : 'Error – try again';
-      res.ok && form.reset();
-    } catch {
-      status.textContent = 'Network error';
-    }
-  });
-});
-
